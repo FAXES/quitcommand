@@ -5,8 +5,8 @@ AddEventHandler("quitserver", function()
 end)
 
 AddEventHandler ('chatMessage', function(source, name, message)
-	if message == '/disconnect' then
-		DropPlayer(source, 'Thanks for stopping by. See you soon.')
+	if message == '/dc' then
+		DropPlayer(source, 'Thanks for stopping by. See you soon.')-- Change this message, It is displayed to the player on leave.
 		CancelEvent()
 	end
 end)
